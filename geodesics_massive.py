@@ -11,3 +11,10 @@ def geodesic_equations(tau, y, M, E, L):
         + L ** 2 / r ** 3
         - 3 * M * L ** 2 / r ** 4
     )
+
+    return np.array([
+        dt_dtau,
+        r_dot,
+        dphi_dtau,
+        r_ddot
+    ])
