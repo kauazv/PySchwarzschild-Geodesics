@@ -1,0 +1,13 @@
+# cache
+__pycache__/
+*.pyc
+
+# jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# SO
+.DS_Store
+Thumbs.db
