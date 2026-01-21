@@ -6,3 +6,8 @@ def geodesic_equations(tau, y, M, E, L):
     f = schwarzschild_factor(r, M)
     dt_dtau = E / f
     dphi_dtau = L / r ** 2
+    r_ddot = (
+        - M / r ** 2
+        + L ** 2 / r ** 3
+        - 3 * M * L ** 2 / r ** 4
+    )
