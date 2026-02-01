@@ -1,8 +1,8 @@
 import sys
 from pathlib import Path
-sys.path.append(str(Path(__file___).resolve().parents[1]))
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 
-import matplotlib.pylot as plt
+import matplotlib.pyplot as plt
 from geodesics_massive import integrate_geodesic
 
 M = 1.0
@@ -22,3 +22,11 @@ solution = integrate_geodesic(
 
 tau = solution.t
 r = solution.y[1]
+
+plt.figure()
+plt.plot(tau, r)
+plt.xlabel("Tempo próprio t")
+plt.ylabel("Coordenada radial r")
+plt.title("Queda radial em Schwarzschild (L = 0)")
+plt.grid(True)
+plt.show()
