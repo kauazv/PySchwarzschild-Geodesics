@@ -36,7 +36,7 @@ def integrate_photon_geodesic(
         max_step=0.1
 ):
 
-    def horizon_event(tau, y):
+    def horizon_event(tau, y, M, E, L):
         r = y[1]
         return r - r_stop
 
